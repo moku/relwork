@@ -1,0 +1,19 @@
+[project]
+name = "relwork"
+version = "0.1.0"
+description = "LLM-driven related-work mapping from a few seed papers"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2.7",
+    "pymupdf>=1.24",
+    "pyyaml>=6.0",
+    "loguru>=0.7",
+]
+
+[project.scripts]
+relwork = "relwork.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
