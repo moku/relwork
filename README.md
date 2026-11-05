@@ -59,6 +59,15 @@ The skill assumes the repo lives at `~/relwork`.
 
 Semantic Scholar (default), OpenAlex, and arXiv. Please follow their terms and rate limits.
 
+## Language
+
+Output and prompts default to **Korean**. To use another language, change these (or ask your coding agent to):
+
+- `relwork/seed.py`: the prompt lines that set the output language for seed analysis
+- `relwork/export.py`, `relwork/graph.py`: report labels and section titles
+- `relwork/cli.py`: the research context template
+- `skill/SKILL.md`: skill description, trigger phrases and instructions
+
 ## License
 
 MIT
